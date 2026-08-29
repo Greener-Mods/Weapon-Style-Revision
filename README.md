@@ -32,7 +32,7 @@ Proficient (1 slot): The character receives a +1 to Armor Class, +2 vs. missile 
 
 Specialized (2 slots): The character receives a +2 to Armor Class, +3 vs. missile attacks.
 
-Master (3 slots): The character receives a +3 to Armor Class, +4 vs. missile attacks.~
+Master (3 slots): The character receives a +3 to Armor Class, +4 vs. missile attacks.
 
 SINGLE-WEAPON: This fighting style is for characters who do not wish to use a shield but want some bonus when using a one-handed melee weapon.
 
