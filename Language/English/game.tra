@@ -1,0 +1,79 @@
+@3 = ~FIGHTER: The Fighter is a champion, swords<PRO_MANWOMAN>, soldier, and brawler who lives or dies by <PRO_HISHER> knowledge of weapons and tactics. Fighters can be found at the front of any battle, contesting toe-to-toe with monsters and villains. A good Fighter needs to be strong and healthy if <PRO_HESHE> hopes to survive.
+
+CLASS FEATURES:
+
+- May use any weapon.
+- May wear any armor or helmet.
+- May achieve Grand Mastery (five slots) in any weapon class.
+- May achieve Mastery (three slots) in any fighting style.
+- Hit Die: d10
+
+Prime Requisites For Dual-Classing: Strength~
+
+@4 = ~RANGER: The Ranger is a warrior and a woods<PRO_MANWOMAN> who is skilled with weapons and is knowledgeable in the ways of the forest. The Ranger often protects and guides lost travelers and honest peasant-folk. A Ranger needs to be strong and wise to the ways of nature to live a full life.
+
+CLASS FEATURES:
+
+- May use any weapon.
+- May wear any armor or helmet.
+- May achieve Specialization (two slots) in any weapon class or fighting style except Two-Weapon Style.
+- May select a racial enemy, which grants a +4 bonus to attack and damage rolls against the selected enemy race.
+- May use the Charm Animal ability once per day. Gains one use at level 1 and an additional use every 2 levels thereafter.
+- May use the Hide In Shadows ability while wearing no armor, leather armor, or studded leather armor.
+- May cast druidic spells starting at level 8.
+- Recieves two bonus proficiency slots in Two-Weapon Style.
+- Alignment restricted to good.
+- Hit Die: d10
+
+Prime Requisites For Dual-Classing: Strength, Dexterity, Wisdom~
+
+@5 = ~PALADIN: A Paladin is a warrior bold and pure, the exemplar of everything good and true. Like the Fighter, the Paladin is a person of action and combat. However, the Paladin lives for the ideals of righteousness, justice, honesty, piety, and chivalry and strives to be a living example of these virtues so that others may learn from <PRO_HIMHER> as well as gain by <PRO_HISHER> actions.
+
+CLASS FEATURES:
+
+- May use any weapon.
+- May wear any armor or helmet.
+- May achieve Specialization (two slots) in any weapon class or fighting style.
+- May use Lay On Hands ability once per day to heal a target for 2 Hit Points per level of the Paladin.
+- May cast Detect Evil once per day per level (starts at 1st level with 4 uses).
+- May cast Protection From Evil once per day per level (starts at 1st level with one use).
+- May Turn Undead as a Cleric two levels lower, starting at level 3.
+- May cast priest spells starting at level 9.
+- Receives a +2 bonus to all Saving Throws.
+- Alignment restricted to lawful good.
+- Hit Die: d10~
+
+@6 = ~TWO-WEAPON: This fighting style allows the character to use two melee weapons at the same time with fewer penalties. A character wielding two weapons without a slot in this fighting style would incur a -6 penalty to attack rolls with their primary hand and a -8 penalty with the off-hand weapon. 
+
+Proficient (1 slot): The character's penalties are reduced to -4 with their primary weapon and -6 with the off-hand weapon.
+
+Specialized (2 slots): The character's penalties are reduced to -2 with their primary weapon and -4 with the off-hand weapon.
+
+Master (3 slots): The character's penalties are reduced to 0 with their primary weapon and -2 with the off-hand weapon.~
+
+@7 = ~TWO-HANDED: This fighting style allows the character to use a two-handed melee weapon and receive special bonuses.
+
+Proficient (1 slot): The character receives +2 to damage and -2 to Speed Factor. 
+
+Specialized (2 slots): The character receives +3 to damage and -3 to Speed Factor. 
+
+Master (3 slots): The character receives +4 to damage and -4 to Speed Factor.~
+
+@8 = ~WEAPON AND SHIELD: Anyone can pick up a shield and get its basic protection bonuses, but by spending slots on this fighting style, an adventurer can maximize the benefits received.
+
+Proficient (1 slot): The character receives a +1 to Armor Class, +2 vs. missile attacks.
+
+Specialized (2 slots): The character receives a +2 to Armor Class, +3 vs. missile attacks.
+
+Master (3 slots): The character receives a +3 to Armor Class, +4 vs. missile attacks.~
+
+@9 = ~SINGLE-WEAPON: This fighting style is for characters who do not wish to use a shield but want some bonus when using a one-handed melee weapon.
+
+Proficient (1 slot): The character receives +1 to hit, +1 to critical hit chance, and +1 to Armor Class.
+
+Specialized (2 slots): The character receives +1 to hit, +1 to critical hit chance, and +2 to Armor Class.
+
+Master (3 slots): The character receives +1 to hit, +1 to critical hit chance, and +3 to Armor Class.~
+
+
+

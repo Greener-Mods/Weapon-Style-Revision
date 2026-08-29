@@ -1,0 +1,112 @@
+BACKUP ~Weapon Style Revisions/Backup~
+AUTHOR ~Greener~
+VERSION ~1.0~
+
+AUTO_EVAL_STRINGS
+
+LANGUAGE
+  ~English~
+  ~english~
+  ~Weapon Style Revisions/Language/English/game.tra~
+  ~Weapon Style Revisions/Language/English/weidu.tra~
+
+BEGIN @1
+REQUIRE_PREDICATE ENGINE_IS ~bgee bg2ee~ @2
+
+DEFINE_ACTION_FUNCTION fighter_ws BEGIN
+  OUTER_SET count = 0
+
+  ACTION_FOR_EACH class IN
+                  fighter
+                  fighter_cleric
+                  fighter_druid
+                  fighter_mage
+                  fighter_thief
+                  fighter_mage_thief
+                  fighter_mage_cleric
+  BEGIN
+    OUTER_SPRINT $fighter("%count%") "%class%"
+    OUTER_SET ++count
+  END
+
+  COPY_EXISTING kitlist.2da override
+    READ_2DA_ENTRIES_NOW kitlist 3
+    FOR (i = 2; i < kitlist; ++i) BEGIN
+      READ_2DA_ENTRY_FORMER kitlist i 1 label
+      READ_2DA_ENTRY_FORMER kitlist i 8 class
+      PATCH_IF class = 2 BEGIN
+        SPRINT $fighter("%count%") "%label%"
+        ++count
+      END
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~WEAPPROF.2DA~ override
+    READ_2DA_ENTRIES_NOW weapprof 3
+    COUNT_2DA_COLS cols
+    PHP_EACH fighter AS _ => symbol BEGIN
+      FOR (i = 0; i < cols - 1; ++i) BEGIN
+        READ_2DA_ENTRY_FORMER weapprof 0 i column_name
+        PATCH_IF "%column_name%" STRING_EQUAL_CASE "%symbol%" BEGIN
+          SET_2DA_ENTRY_LATER wweapprof 29 i + 1 3 
+          SET_2DA_ENTRY_LATER wweapprof 30 i + 1 3 
+          SET_2DA_ENTRY_LATER wweapprof 31 i + 1 3
+        END
+      END
+    END
+    SET_2DA_ENTRIES_NOW wweapprof 3
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+END
+
+LAF fighter_ws END
+
+DEFINE_ACTION_FUNCTION paladin_ws BEGIN
+  OUTER_SET count = 0
+
+  ACTION_FOR_EACH class IN
+                  paladin
+  BEGIN
+    OUTER_SPRINT $paladin("%count%") "%class%"
+    OUTER_SET ++count
+  END
+
+  COPY_EXISTING kitlist.2da override
+    READ_2DA_ENTRIES_NOW kitlist 3
+    FOR (i = 2; i < kitlist; ++i) BEGIN
+      READ_2DA_ENTRY_FORMER kitlist i 1 label
+      READ_2DA_ENTRY_FORMER kitlist i 8 class
+      PATCH_IF class = 6 BEGIN
+        SPRINT $paladin("%count%") "%label%"
+        ++count
+      END
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~WEAPPROF.2DA~ override
+    READ_2DA_ENTRIES_NOW weapprof 3
+    COUNT_2DA_COLS cols
+    PHP_EACH paladin AS _ => symbol BEGIN
+      FOR (i = 0; i < cols - 1; ++i) BEGIN
+        READ_2DA_ENTRY_FORMER weapprof 0 i column_name
+        PATCH_IF "%column_name%" STRING_EQUAL_CASE "%symbol%" BEGIN
+          SET_2DA_ENTRY_LATER wweapprof 32 i + 1 2 
+        END
+      END
+    END
+    SET_2DA_ENTRIES_NOW wweapprof 3
+    PRETTY_PRINT_2DA
+  BUT_ONLY
+END
+
+LAF paladin_ws END
+
+STRING_SET ~9556~ @3
+STRING_SET ~9557~ @4
+STRING_SET ~9558~ @5
+STRING_SET ~24999~ @6
+STRING_SET ~25044~ @7
+STRING_SET ~25045~ @8
+STRING_SET ~25046~ @9
+
+COPY ~Weapon Style Revisions/2DA/STYLBONU.2DA~ ~override~
