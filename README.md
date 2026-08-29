@@ -1,6 +1,5 @@
 # Weapon-Style-Revision
 
-
 INSTALLATION 
                  
 This is a WEIDU mod thus currently is compatible with other mods.
